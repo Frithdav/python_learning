@@ -96,4 +96,8 @@ print(full_path)
 
  #F-string
 
- 
+name = "Tajiri"
+age = 2.9
+is_student = False
+
+print(f"My name is {name}, I am {age} years old, and pupil status is {is_student}.")
