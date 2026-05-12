@@ -28,8 +28,8 @@
 
 
 # print("""Your Learning Path:
-# \t - Python Basics 
-# \t - Data Engineering 
+# \t - Python Basics
+# \t - Data Engineering
 # \t  - AI""")
 
 
@@ -42,7 +42,6 @@
 # name = "Bambi"
 
 # print("You are", name)
-
 
 
 # #FUNCTIONS - Independent block of code
@@ -60,7 +59,6 @@
 # print(number.bit_length())
 
 
-
 # #TYPES
 
 # name = "Tajiri"
@@ -72,32 +70,52 @@
 # print(type(age))
 # print("Your Age is:" , age)
 
-#DATA TRANSFORMATIONS:
-  #Replace
+# DATA TRANSFORMATIONS:
+# Replace
 
 price = "KES 18,005,899.99"
-print(price.replace("KES","").replace(",",""))
+print(price.replace("KES", "").replace(",", ""))
 
+# Join - + opeerator
 
-  #Join - + opeerator
-   
-first_name ="Malia"
-last_name ="Mormont"
+first_name = "Malia"
+last_name = "Mormont"
 
-full_name = first_name + " " +last_name
+full_name = first_name + " " + last_name
 
-folder ="C:/Users/Tajiri/"
-file ="learn.csv"
+folder = "C:/Users/Tajiri/"
+file = "learn.csv"
 
 full_path = folder + file
 
 print(full_path)
 
-
- #F-string
+# F-string
 
 name = "Tajiri"
 age = 2.9
 is_student = False
 
-print(f"My name is {name}, I am {age} years old, and pupil status is {is_student}.")
+print(
+    f"My name is {name}, I am {age} years old, and pupil status is {is_student}.")
+
+print(f"2 + 8 = {{2+8}}")
+print(f"2 + 8 = {2+8}")
+
+# Split()
+stamp = "2026-10-08 20:20:20"
+print(stamp.split(" "))
+
+# Data Etraction
+text = "python"
+print(text[0:5:2])
+
+# DATA CLEANING
+# Whitespaces
+
+text = "968-Maria, (D@t@ Engineer);; 27y   "
+  #return name: maria | role:data engineer  | age: 27
+
+text = text.strip().replace("@","a").replace(";;","").replace("(","").replace(")","").lower().replace(",","")
+
+print(f"name: {text[4:9]} | role:{text[10:24]} | age: {text[-3:-1]}")
