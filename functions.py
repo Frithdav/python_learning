@@ -1,74 +1,74 @@
 
-# # Python Built-in functions - comes with python by default
+# Python Built-in functions - comes with python by default
 
-# # User-defined functions - user own creation
+# User-defined functions - user own creation
 
-# # Third-Party functions - Installable functions.
-
-
-# print(" --------------------------- ")
-# print("LEARNING PYTHON SINCE 2018")
-# print("---------------------------")
+# Third-Party functions - Installable functions.
 
 
-# # Escape Sequences in Python. - special lines.
-
-# # Escape Double Quote - Allows inclusion without ending it.
-# print("Hi \"Python\"")
-
-# # Escape Single Quote - Allows inclusion without ending it.
-# print("Path: \'Python\'")
-
-# # Escape backslash- Allows inclusion without ending it.
-# print("Path: C:\\Python\\Frimannn\\python")
+print(" --------------------------- ")
+print("LEARNING PYTHON SINCE 2018")
+print("---------------------------")
 
 
-# print("My son, Fri Mann \n")
-# print("Is such a lively person \n I relly enjoy him calling me \'Papaa\'. It is healing the soul!")
+# Escape Sequences in Python. - special lines.
+
+# Escape Double Quote - Allows inclusion without ending it.
+print("Hi \"Python\"")
+
+# Escape Single Quote - Allows inclusion without ending it.
+print("Path: \'Python\'")
+
+# Escape backslash- Allows inclusion without ending it.
+print("Path: C:\\Python\\Frimannn\\python")
 
 
-# print("""Your Learning Path:
-# \t - Python Basics
-# \t - Data Engineering
-# \t  - AI""")
+print("My son, Fri Mann \n")
+print("Is such a lively person \n I relly enjoy him calling me \'Papaa\'. It is healing the soul!")
 
 
-# #VARIABLES
-# name = "Mormont"
-# language = "Python"
-
-# print("My name is", name,"I wanna become an expert in", language)
-
-# name = "Bambi"
-
-# print("You are", name)
+print("""Your Learning Path:
+\t - Python Basics
+\t - Data Engineering
+\t  - AI""")
 
 
-# #FUNCTIONS - Independent block of code
-#   #syntax function_name(value)
-# print('hello')
-# type(50)
+#VARIABLES
+name = "Mormont"
+language = "Python"
 
-# #METHODS - Functions which belongs to object/class.
-#    #syntax value.method_name()
+print("My name is", name,"I wanna become an expert in", language)
 
-# print("helo".upper())
+name = "Bambi"
 
-# number = 50
-
-# print(number.bit_length())
+print("You are", name)
 
 
-# #TYPES
+#FUNCTIONS - Independent block of code
+  #syntax function_name(value)
+print('hello')
+type(50)
 
-# name = "Tajiri"
+#METHODS - Functions which belongs to object/class.
+   #syntax value.method_name()
 
-# print(type(name))
+print("helo".upper())
 
-# age = 28
+number = 50
 
-# print(type(age))
-# print("Your Age is:" , age)
+print(number.bit_length())
+
+
+#TYPES
+
+name = "Tajiri"
+
+print(type(name))
+
+age = 28
+
+print(type(age))
+print("Your Age is:" , age)
 
 # DATA TRANSFORMATIONS:
 # Replace
