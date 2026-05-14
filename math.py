@@ -18,3 +18,14 @@ print(round(price))
 import math
 print(math.floor(price))
 print(math.ceil(price))
+
+import random
+print(random.random())
+print(random.randint(1,10))
+
+#Numeric Validation
+x = 7.0
+print(x.is_integer())
+print(isinstance(x,int))
+
+print(random.randint(1,100).is_integer())
