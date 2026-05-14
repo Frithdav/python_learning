@@ -114,8 +114,28 @@ print(text[0:5:2])
 # Whitespaces
 
 text = "968-Maria, (D@t@ Engineer);; 27y   "
-  #return name: maria | role:data engineer  | age: 27
+# return name: maria | role:data engineer  | age: 27
 
-text = text.strip().replace("@","a").replace(";;","").replace("(","").replace(")","").lower().replace(",","")
+text = text.strip().replace("@", "a").replace(";;", "").replace("(",
+                                                                "").replace(")", "").lower().replace(",", "")
 
 print(f"name: {text[4:9]} | role:{text[10:24]} | age: {text[-3:-1]}")
+
+
+# Searching
+print(text.startswith("968"))
+print(text.endswith("y "))
+
+# Find
+
+phone1 = "+254-730-730-730"
+phone2 = "254-700-000-001"
+
+print(phone1[phone1.find("-")+1:])
+
+# Validation
+country = "Kenya"
+print(country.isalpha())
+
+phone ="0729662769"
+print(phone.isnumeric())
