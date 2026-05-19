@@ -29,3 +29,20 @@ print(x.is_integer())
 print(isinstance(x,int))
 
 print(random.randint(1,100).is_integer())
+
+
+#LOGICAL OPERATOR
+
+  #AND || OR || NOT || IN
+print( not 3>2)
+
+  #"a" in "Data" || 'a' not in 'Data'
+print (3 in [1,2,3])
+
+
+  #IDF ELSE
+score = 50
+if score >=90:
+    print("A")
+else :
+    print("Wololo!")
