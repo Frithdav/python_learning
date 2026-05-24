@@ -56,3 +56,33 @@ for email in emails:
         print(f"potential sql injection: Hacker attacker: \n'{email}'")
         break
     print(f"Processing Email: {email}")
+
+#For ... Else
+items = [1,2,3,5]
+for i in items:
+    if i % 2 == 0:
+        print(f"Even Number: {i}")
+        break
+else:
+    print(f"odd nomber only array.")
+
+files = ['data.csv','report.pdf','dasboard.csv','time.txt']
+for file in files:
+    if not file.endswith('.csv'):
+        print(f"{file} is not a csv")
+        break
+else:
+    print('All files are csv')
+
+
+files = ['data.csv','report.pdf','dasboard.csv','time.txt','data.csv']
+
+seen = set()
+
+for file in files:
+    if file in seen:
+        print(f"Duplicates found")
+        break
+    seen.add(file)
+else:
+    print('All files are uniques')
