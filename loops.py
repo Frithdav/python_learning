@@ -126,3 +126,9 @@ while ans.lower() !="yes":
 print("Hahahahah, you inversely straight")
 
 #WHILE .... TRUE
+
+while True:
+    answer = input("Aren't you gay? (Yes/No):")
+    if answer.lower() == "Yes":
+        break
+print("{Gay! * 2}")
