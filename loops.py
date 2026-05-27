@@ -101,34 +101,38 @@ for y in years:
             print(f"Reports_{y}_{m}_{d}.csv")
 
 
-#Looping through tables:
- #SELECT count(*) FROM customers where id is IS NULL;
+# Looping through tables:
+ # SELECT count(*) FROM customers where id is IS NULL;
 
-tables =['customers','orders','products','prices']
-columns = ['id','code','create_date']
+tables = ['customers', 'orders', 'products', 'prices']
+columns = ['id', 'code', 'create_date']
 for t in tables:
     for c in columns:
         print(f"SELECT count(*) FROM {t} where {c} IS NULL;")
 
 
-#WHILE .... LOOP
+# WHILE .... LOOP
 
 count = 1
 while count <= 10:
     print(count)
-    count +=2
+    count += 2
 
-#Dynamic while ... loop
+# Dynamic while ... loop
 
-ans = ""
-while ans.lower() !="yes":
-    ans = input("Wallahi, you are gay! (yes/no):")
-print("Hahahahah, you inversely straight")
+# ans = ""
+# while ans.lower() != "yes":
+#     ans = input("Wallahi, you are gay! (yes/no):")
+# print("Hahahahah, you inversely straight")
 
-#WHILE .... TRUE
-
+# WHILE .... TRUE
+count = 0
 while True:
     answer = input("Aren't you gay? (Yes/No):")
-    if answer.lower() == "Yes":
+    if answer.lower() == "yes":
+        print("Glad we are on the same page.")
         break
-print("{Gay! * 2}")
+    count += 1
+    if count == 3:
+        print("3 Strikes, You are Out!")
+        break
