@@ -35,3 +35,17 @@ print(f"{name}, {details},{city}")
  # underscore _ unpacking
 lst = [20,30,40,50,]
 _, nd, rd, _ = lst
+
+num = [1,4,5,10,3]
+print("Max:", max(num), num.count(10))
+
+#Changing List
+  # - New data - add | append() | insert(psn,val)
+  # - Wrong data - remove
+  # - new data - update
+
+letters = ['a','b','c']
+letters.append('d')
+letters.insert(0,'x')
+
+print(letters)
