@@ -30,6 +30,8 @@ one,two,three,fifty,ninty = numbers
 person = ['Malia','33 days','Data Engineer','Female','Mombasa']
 name,*details, city = person
 
-print(name)
-print(details)
-print(city)
+print(f"{name}, {details},{city}")
+
+ # underscore _ unpacking
+lst = [20,30,40,50,]
+_, nd, rd, _ = lst
