@@ -48,4 +48,24 @@ letters = ['a','b','c']
 letters.append('d')
 letters.insert(0,'x')
 
-print(letters)
+
+matrix = [['a','c','b'],['d','e','f']]
+matrix[0].sort()
+print(matrix)
+
+#Reversing List
+
+a = [4,3,2,1]
+a.reverse()
+b= reversed(a)
+print(list(b))
+
+#Copying
+letters = ['a','b','c']
+lettters_copy = letters.copy()
+letters.pop()
+lettters_copy.append('z')
+
+print("original: ", letters)
+print("Copy:", lettters_copy)
+
