@@ -69,3 +69,16 @@ lettters_copy.append('z')
 print("original: ", letters)
 print("Copy:", lettters_copy)
 
+#Deep Copy
+
+import copy
+
+matrix = [['a','b'],
+          ['c','d']
+]
+matrix_copy = copy.deepcopy(matrix)
+matrix.pop()
+matrix_copy[0].append('z')
+
+print('Original: ', matrix)
+print('Copy:',  matrix_copy)
