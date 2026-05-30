@@ -154,3 +154,37 @@ tools = ['Sql','123','10','python']
 print(list(filter(str.isalpha,tools)))
 for i in filter(str.isalpha, tools):
     print(i)
+
+#Lambda iterator
+
+index = lambda X: X * 2
+print(index(8))
+
+
+add = lambda x,y: x + y
+print(add(180999,32000))
+
+check = lambda  i : i in "sql"
+print(check('l'))
+
+
+prices = ['KES12.50', 'KES100.0', 'KES9.99', '$198.99']
+print(list(map(lambda p: float(p.replace('KES', '').replace('$', '')), prices)))
+
+
+prices = [120,130,98,95]
+
+print(list(filter(lambda p: p >= 100,prices)))
+
+
+students = [
+    ['Kumar',90],
+    ['Aroon',79],
+    ['velo',89]]
+
+for student in filter(lambda x: x[1] > 80,students):
+    print(student)
+
+#keep student where first xter of name starts with "V".
+for i in filter(lambda row: row[0].startswith('A'),students):
+    print(i)
