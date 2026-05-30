@@ -69,7 +69,7 @@ lettters_copy.append('z')
 print("original: ", letters)
 print("Copy:", lettters_copy)
 
-#Deep Copy
+#Deep Copy - copy.deepcopy()
 
 import copy
 
@@ -82,3 +82,51 @@ matrix_copy[0].append('z')
 
 print('Original: ', matrix)
 print('Copy:',  matrix_copy)
+
+#just Copy - copy.copy()
+matrix = [['a','b'],
+          ['c','d']
+]
+matrix_copy = copy.copy(matrix)
+matrix.pop()
+matrix_copy[0].append('z')
+
+print('Original: ', matrix)
+print('Copy:',  matrix_copy)
+
+
+#Combining List
+
+letters = ['a','b','c']
+numbers = [1,2,3]
+
+comb = letters + numbers
+merge = [letters, numbers]
+numbers.extend(letters)
+zipz = list(zip(letters,numbers))
+
+
+print(letters)
+print(numbers)
+print(comb)
+print(merge)
+print(zipz)
+
+#Iterating List - Iterators & Iterables
+  # why need Iterators ?
+  # 1.build a Loop thro a list
+  # 2.save memory 
+  # 3.for speed and flexibility
+
+letters = ['a','b','c']
+new_list = []
+for i in letters:
+    new_list.append(i.upper())
+    print(new_list)
+
+letters = ['a','b','c','d']
+for index, value in enumerate(letters):
+    print(index,value)
+
+for i in reversed(letters):
+    print(i)
