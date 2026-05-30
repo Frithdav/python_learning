@@ -130,3 +130,27 @@ for index, value in enumerate(letters):
 
 for i in reversed(letters):
     print(i)
+
+
+#Iterator map
+ls = ['x','y','z']
+print(list(map(str.upper,ls)))
+
+num = [2,4,6]
+print(list(map(int, num)))
+
+names =['  mark','John','Kumar  ']
+for n in map(str.title,map(str.strip,names)):
+    print(n)
+
+#iterator filter
+
+ds = ['a',10,'',None,False,'b','c']
+print(list(filter(None, ds)))
+print(list(filter(bool, ds)))
+
+
+tools = ['Sql','123','10','python']
+print(list(filter(str.isalpha,tools)))
+for i in filter(str.isalpha, tools):
+    print(i)
