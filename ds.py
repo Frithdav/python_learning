@@ -146,6 +146,7 @@ for n in map(str.title,map(str.strip,names)):
 #iterator filter
 
 ds = ['a',10,'',None,False,'b','c']
+print("****Iterator filter ****")
 print(list(filter(None, ds)))
 print(list(filter(bool, ds)))
 
@@ -157,6 +158,7 @@ for i in filter(str.isalpha, tools):
 
 #Lambda iterator
 
+print(f'\n **** lambda operator ****')
 index = lambda X: X * 2
 print(index(8))
 
@@ -167,11 +169,12 @@ print(add(180999,32000))
 check = lambda  i : i in "sql"
 print(check('l'))
 
+print(f'\n ****Prices Manipulation - lambda**** \n')
 
 prices = ['KES12.50', 'KES100.0', 'KES9.99', '$198.99']
 print(list(map(lambda p: float(p.replace('KES', '').replace('$', '')), prices)))
 
-
+print(f'\n **** Filter Lambda **** \n')
 prices = [120,130,98,95]
 
 print(list(filter(lambda p: p >= 100,prices)))
@@ -186,5 +189,28 @@ for student in filter(lambda x: x[1] > 80,students):
     print(student)
 
 #keep student where first xter of name starts with "V".
-for i in filter(lambda row: row[0].startswith('A'),students):
+for i in filter(lambda row: row[0].startswith('V'),students):
     print(i)
+
+
+#List Comprehension
+
+print(f'\n **** List Comprehension **** \n')
+
+
+domains = ['www.google.com',
+           'openai.com','localhoast'
+           ,'WWW.FRIMANNTECH.COM']
+cleaned = [
+    #data transformation
+    d.lower().replace('www','')
+    #for loop
+    for d in domains
+    #data filtering
+    if '.' in d
+]
+
+
+print(f'{cleaned} \n')
+
+
