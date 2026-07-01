@@ -214,3 +214,24 @@ cleaned = [
 print(f'{cleaned} \n')
 
 
+#TUPLE
+
+my_tuple = (9,9,88,66,55)
+
+print(my_tuple)
+print(my_tuple[0])
+
+print(sorted(my_tuple))
+
+
+#SET
+
+my_set ={5,0,76}
+
+print(f'\n {my_set}')
+my_set.remove(76) # or discard()
+my_set.discard(80)
+my_set.add(7)
+my_set.update('hello') #or update using |=
+my_set |= {1,6}
+print(f'new  set: {my_set}')
