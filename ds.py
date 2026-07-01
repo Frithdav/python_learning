@@ -234,4 +234,16 @@ my_set.discard(80)
 my_set.add(7)
 my_set.update('hello') #or update using |=
 my_set |= {1,6}
-print(f'new  set: {my_set}')
+print(f'new  set: {my_set} \n')
+
+ #Mathematical Operations.
+
+a = {10,20,30,40}
+b = {30,60,50,55}
+
+print(f'\n Set Union {a.union(b)} \n') 
+print(a | b)
+
+print(f'\n new intersect: {a.intersection(b)}')
+print(f'\n difference: {a.difference(b)}') #or -
+print(f'\n semetric set: {a.symmetric_difference(b)}') #or ^
